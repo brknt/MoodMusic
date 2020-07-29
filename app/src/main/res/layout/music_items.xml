@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="#111111"
+    android:layout_marginTop="5dp"
+    android:id="@+id/audio_item">
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/music_img"
+        android:src="@drawable/music_icon"
+        android:padding="5dp">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Song Title"
+        android:layout_toEndOf="@+id/music_img"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/song_title"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/duration"
+        android:textColor="@color/colorAccent"
+        android:text="3:05">
+
+    </TextView>
+    <ImageView
+        android:id="@+id/play_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/duration"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/play_icon"
+        android:visibility="visible"></ImageView>
+
+
+</RelativeLayout>
