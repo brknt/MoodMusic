@@ -19,13 +19,17 @@ import android.webkit.MimeTypeMap;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.moodmusic.Model.UploadSong;
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -47,6 +51,7 @@ public class UploadMusicActivity extends AppCompatActivity implements AdapterVie
     StorageReference mStorageref;
     StorageTask mUploadsTasx;
     DatabaseReference referenceSongs;
+
     String songsMood;
     MediaMetadataRetriever metadataRetriever;
 
@@ -74,6 +79,8 @@ public class UploadMusicActivity extends AppCompatActivity implements AdapterVie
         artist = findViewById(R.id.artist);
         duration = findViewById(R.id.duration);
         dataa = findViewById(R.id.dataa);
+
+
 
 
         metadataRetriever = new MediaMetadataRetriever();
@@ -209,12 +216,24 @@ public class UploadMusicActivity extends AppCompatActivity implements AdapterVie
                             uploadId = referenceSongs.push().getKey();
 
                             referenceSongs.child(uploadId).setValue(uploadSong);
-                            referenceSongs.child(uploadId).child("joy").setValue(0);
+
+                            referenceSongs = FirebaseDatabase.getInstance().getReference().child("moods").child(uploadId);
+                            HashMap<String,String> userMap = new HashMap<>();
+                            userMap.put("joy","0");
+                            userMap.put("sadness","0");
+                            userMap.put("anger","0");
+                            userMap.put("excitement","0");
+                            userMap.put("rebelion","0");
+                            userMap.put("fear","0");
+                            referenceSongs.setValue(userMap);
+
+
+                            /*referenceSongs.child(uploadId).child("joy").setValue(0);
                             referenceSongs.child(uploadId).child("sadness").setValue(0);
                             referenceSongs.child(uploadId).child("anger").setValue(0);
                             referenceSongs.child(uploadId).child("excitement").setValue(0);
                             referenceSongs.child(uploadId).child("rebelion").setValue(0);
-                            referenceSongs.child(uploadId).child("fear").setValue(0);
+                            referenceSongs.child(uploadId).child("fear").setValue(0);*/
 
 
 

@@ -68,8 +68,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/ic_play"
-            android:onClick="playButton"
-            />
+            ></Button>
 
         <TextView
             android:id="@+id/songTitle"
@@ -159,6 +158,7 @@
 
 
         <LinearLayout
+            android:id="@+id/joyLinear"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="#009688"
@@ -178,11 +178,12 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/joyText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-                android:text=" 100"
+                android:text=" 0"
                 android:textColor="@android:color/black" />
         </LinearLayout>
 
@@ -193,6 +194,7 @@
             android:layout_weight="1" />
 
         <LinearLayout
+            android:id="@+id/sadnessLinear"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="#009688"
@@ -211,9 +213,10 @@
                 android:textStyle="bold"
                 android:textColor="#ffff"/>
             <TextView
+                android:id="@+id/sadnessText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" 250"
+                android:text=" 0"
                 android:textColor="@android:color/black"
                 android:layout_marginTop="5dp"
                 android:layout_gravity="center"/>
@@ -225,6 +228,7 @@
             android:layout_weight="1"/>
 
         <LinearLayout
+            android:id="@+id/angerLinear"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="#009688"
@@ -245,9 +249,10 @@
                 android:textColor="#ffff"
                 />
             <TextView
+                android:id="@+id/angerText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" 30"
+                android:text=" 0"
                 android:textColor="@android:color/black"
                 android:layout_marginTop="5dp"
                 android:layout_gravity="center"/>
@@ -265,6 +270,7 @@
         android:layout_marginTop="10dp">
 
         <LinearLayout
+            android:id="@+id/excitementLinear"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="#009688"
@@ -285,10 +291,11 @@
                 android:textColor="#ffff"/>
 
             <TextView
+                android:id="@+id/excitementText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text=" 100"
+                android:text=" 0"
                 android:layout_gravity="center"
                 android:textColor="@android:color/black" />
         </LinearLayout>
@@ -299,6 +306,7 @@
             android:layout_weight="1"/>
 
         <LinearLayout
+            android:id="@+id/rebelionLinear"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="#009688"
@@ -318,9 +326,10 @@
                 android:textStyle="bold"
                 android:textColor="#ffff"/>
             <TextView
+                android:id="@+id/rebelionText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" 250"
+                android:text=" 0"
                 android:textColor="@android:color/black"
                 android:layout_marginTop="5dp"
 
@@ -333,6 +342,7 @@
             android:layout_weight="1"/>
 
         <LinearLayout
+            android:id="@+id/fearLinear"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:background="#009688"
@@ -352,9 +362,10 @@
                 android:textColor="#ffff"
                 android:textStyle="bold" />
             <TextView
+                android:id="@+id/fearText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=" 30"
+                android:text=" 0"
                 android:layout_marginTop="5dp"
                 android:layout_gravity="center"
                 android:textColor="@android:color/black"/>
