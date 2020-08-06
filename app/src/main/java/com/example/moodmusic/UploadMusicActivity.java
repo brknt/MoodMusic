@@ -51,6 +51,7 @@ public class UploadMusicActivity extends AppCompatActivity implements AdapterVie
     StorageReference mStorageref;
     StorageTask mUploadsTasx;
     DatabaseReference referenceSongs;
+    DatabaseReference referenceMoods;
 
     String songsMood;
     MediaMetadataRetriever metadataRetriever;
@@ -217,7 +218,7 @@ public class UploadMusicActivity extends AppCompatActivity implements AdapterVie
 
                             referenceSongs.child(uploadId).setValue(uploadSong);
 
-                            referenceSongs = FirebaseDatabase.getInstance().getReference().child("moods").child(uploadId);
+                            referenceMoods = FirebaseDatabase.getInstance().getReference().child("moods").child(uploadId);
                             HashMap<String,String> userMap = new HashMap<>();
                             userMap.put("joy","0");
                             userMap.put("sadness","0");
@@ -225,7 +226,7 @@ public class UploadMusicActivity extends AppCompatActivity implements AdapterVie
                             userMap.put("excitement","0");
                             userMap.put("rebelion","0");
                             userMap.put("fear","0");
-                            referenceSongs.setValue(userMap);
+                            referenceMoods.setValue(userMap);
 
 
                             /*referenceSongs.child(uploadId).child("joy").setValue(0);

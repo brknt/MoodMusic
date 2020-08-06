@@ -86,6 +86,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="title"
+            android:textSize="30dp"
             android:id="@+id/title"
             android:textStyle="bold"></TextView>
 
@@ -93,6 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="artist"
+            android:textSize="25dp"
             android:id="@+id/artist"
             android:textStyle="bold"></TextView>
 
@@ -100,6 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="duration"
+            android:textSize="20dp"
             android:id="@+id/duration"
             android:textStyle="bold"></TextView>
         <TextView

@@ -125,10 +125,6 @@ public class SongPlay extends AppCompatActivity {
                 String SONGDURATION = Utility.convertDuration(Long.parseLong(SONGDURATION2));
 
 
-
-
-
-
                 artistText.setText(SONGARTIST);
                 songTitle.setText(SONGNAME);
                 durationTime.setText(SONGDURATION);
