@@ -1,4 +1,4 @@
-# MoodMusic
+# Mood based music player application
 ## INTRODUCTION
 Music is an important component of our daily life.We listen to songs according to our mood.Music is one of the entertainment environments.
 Music is a component that directs people's emotions and enables them to live their emotions intensely.
@@ -13,3 +13,12 @@ the songs appropriate to the current emotional state.Users' instant emotional st
 feelings the song contains.In this way, the user can choose a song based on his instant feeling.Our project aims to play music based on the current emotional state of the user.
 "Android Studio" and "firebase Real-time database" were used for this project.
 
+## Front-End
+The design was created using responsive components in the front-end
+structure.Wireframe has been created before the design phase.
+
+![front-end](https://github.com/brknt/MoodMusic/blob/master/image/front-end.jpg)
+
+## Firebase
+
+![firebase](https://github.com/brknt/MoodMusic/blob/master/image/firebase.png)
