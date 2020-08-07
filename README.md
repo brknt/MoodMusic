@@ -22,3 +22,15 @@ structure.Wireframe has been created before the design phase.
 ## Firebase
 
 ![firebase](https://github.com/brknt/MoodMusic/blob/master/image/firebase.png)
+
+## Dependencies
+
+`    implementation 'com.firebaseui:firebase-ui-database:3.1.3'`
+    `implementation 'com.google.firebase:firebase-auth:19.3.2'`
+    `implementation 'com.google.firebase:firebase-database:19.3.1'`
+    `implementation 'com.google.firebase:firebase-storage:19.1.1'`
+   ` implementation 'com.github.bumptech.glide:glide:4.11.0'`
+    `annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'`
+    `implementation 'com.squareup.picasso:picasso:2.71828'`
+    `implementation 'com.makeramen:roundedimageview:2.3.0'`
+    
