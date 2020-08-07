@@ -78,8 +78,7 @@ public class SongsFragment extends Fragment {
                         .setQuery(SongsRef,UploadSong.class)
                         .build();
 
-        FirebaseRecyclerAdapter<UploadSong,UploadSongViewHolder> adapter
-                = new FirebaseRecyclerAdapter<UploadSong, UploadSongViewHolder>(options) {
+        FirebaseRecyclerAdapter<UploadSong,UploadSongViewHolder> adapter = new FirebaseRecyclerAdapter<UploadSong, UploadSongViewHolder>(options) {
             @Override
             protected void onBindViewHolder(@NonNull final UploadSongViewHolder holder, final int position, @NonNull UploadSong model) {
 
